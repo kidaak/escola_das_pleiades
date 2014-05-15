@@ -29,8 +29,9 @@ gem 'rails-i18n', '~> 4.0.2'
 gem 'slim-rails', '~> 2.1.4'
 # Meta controllers/routes
 gem 'inherited_resources', '~> 1.4.1'
-# For creating elegant backends for website administration
+# For website administration
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'active_admin_editor'
 # For authentication
 gem 'devise'
 

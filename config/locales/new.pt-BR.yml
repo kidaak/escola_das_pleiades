@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      new:
+        one: Notícia
+        other: Notícias
+    attributes:
+      new:
+        title: Título
+        content: Conteúdo
+        author: Autor
+        ordering: Ordenamento
+        headline: Chamada
+        publish_at: Publicação
