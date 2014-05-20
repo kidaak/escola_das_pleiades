@@ -9,6 +9,9 @@ pt-BR:
         title: Título
         content: Conteúdo
         author: Autor
-        ordering: Ordenamento
+        ordering: Ordenamento de destaque
         headline: Chamada
         publish_at: Publicação
+        created_at: Criado em
+        updated_at: Atualizado em
+        image: imagem

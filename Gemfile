@@ -34,6 +34,9 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'active_admin_editor'
 # For authentication
 gem 'devise'
+# Upload attachment to amazon S3
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
