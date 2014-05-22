@@ -1,5 +1,6 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
+  config.filters = false
 
   index do
     selectable_column
@@ -7,7 +8,6 @@ ActiveAdmin.register AdminUser do
     column :email
     actions
   end
-  config.filters = false
   form do |f|
     f.inputs "Admin Details" do
       f.input :email

@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      event:
+        one: Evento
+        other: Eventos
+    attributes:
+      event:
+        name: Nome
+        description: Descrição
+        address: Endereço
+        starts_at: Inicio
+        ends_at: Fim
+        ordering: Ordenamento do destaque

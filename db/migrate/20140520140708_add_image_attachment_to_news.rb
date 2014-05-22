@@ -1,5 +1,5 @@
 class AddImageAttachmentToNews < ActiveRecord::Migration
-def self.up
+  def self.up
     add_attachment :news, :image
   end
 
