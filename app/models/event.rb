@@ -3,4 +3,19 @@ class Event < ActiveRecord::Base
   validates :name, :description, :address, :starts_at, :ends_at, :ordering, presence: true
   validates :ordering, numericality: {greater_than_or_equal_to: 0, less_than: 4}
   validates_attachment :image, presence:true, :content_type => { content_type: "image/jpeg" }
+
+  def self.by_relevance
+    order("CASE WHEN starts_at >= current_timestamp THEN starts_at END ASC, CASE WHEN starts_at < current_timestamp THEN starts_at END DESC")
+  end
+
+  def self.home
+    by_relevance.limit(3)
+  end
+  def past?
+    ends_at < Time.now
+  end
+
+  def ongoing?
+    starts_at < Time.now && ends_at > Time.now
+  end
 end

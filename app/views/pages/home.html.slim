@@ -1,0 +1,13 @@
+- content_for :title do
+  = "Home"
+- @news.each do |new|
+  image= image_tag new.image.url(:medium)
+  h1= new.title
+  headline= new.headline
+br
+br
+br
+- @events.each do |event|
+  image= image_tag event.image.url(:medium)
+  h1= event.name
+  span= l event.starts_at, format: :long
