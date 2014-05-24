@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      video:
+        one: Vídeo
+        other: Vídeos
+    attributes:
+      video:
+        title: Título
+        link: Link
+        home_page: Destaque?

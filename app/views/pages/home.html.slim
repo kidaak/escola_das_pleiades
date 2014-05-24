@@ -1,13 +1,19 @@
 - content_for :title do
   = "Home"
+h1 Notícias
 - @news.each do |new|
   image= image_tag new.image.url(:medium)
-  h1= new.title
+  h2= new.title
   headline= new.headline
 br
 br
 br
+h1 Eventos
 - @events.each do |event|
   image= image_tag event.image.url(:medium)
-  h1= event.name
+  h2= event.name
   span= l event.starts_at, format: :long
+br
+br
+br
+iframe width="560" height="315" src="//www.youtube.com/embed/#{@video.code}" frameborder="0" allowfullscreen
