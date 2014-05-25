@@ -2,8 +2,7 @@
   = "Cursos"
 - unless @courses.blank?
   - @courses.each do |course|
-    =link_to course.name, course_path(course)
-    p=course.brief_description
-    = image_tag course.image.url(:medium)
-    br
+    h1= link_to course.name, course_path(course)
+    = image_tag course.image.url(:thumb)
+    p= course.brief_description
 

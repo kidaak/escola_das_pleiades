@@ -1,0 +1,10 @@
+- content_for :title do
+  = "#{@new.title}"
+h1= @new.title
+= image_tag @new.image.url(:thumb)
+= @new.author
+= ' ------- '
+= l @new.publish_at, format: :simple
+p= @new.content.html_safe
+br
+

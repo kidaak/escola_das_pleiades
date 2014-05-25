@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/contato', to: 'pages#contact', as: 'contact'
   get '/cursos', to: 'courses#index', as: 'courses'
   get '/cursos/:id', to: 'courses#show', as: 'course'
+  get '/noticias', to: 'news#index', as: 'news'
+  get '/noticias/:id', to: 'news#show', as: 'new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

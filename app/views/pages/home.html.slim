@@ -2,16 +2,18 @@
   = "Home"
 h1 Notícias
 - @news.each do |new|
-  image= image_tag new.image.url(:medium)
   h2= new.title
+  image= image_tag new.image.url(:thumb)
+  br
   headline= new.headline
 br
 br
 br
 h1 Eventos
 - @events.each do |event|
-  image= image_tag event.image.url(:medium)
   h2= event.name
+  image= image_tag event.image.url(:thumb)
+  br
   span= l event.starts_at, format: :long
 br
 br

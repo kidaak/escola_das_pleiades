@@ -1,0 +1,8 @@
+- content_for :title do
+  = "Noticias"
+- unless @news.blank?
+  - @news.each do |new|
+    h1= link_to new.title, new_path(new)
+    = image_tag new.image.url(:thumb)
+    p= new.headline
+
