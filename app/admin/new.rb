@@ -1,4 +1,5 @@
 ActiveAdmin.register New do
+  permit_params :title, :content, :author, :ordering, :headline, :publish_at, :image
 
   index do
     id_column
@@ -27,7 +28,9 @@ ActiveAdmin.register New do
       row :id
       row :title
       row :author
-      row :content
+      row :content do |new|
+        new.content.html_safe
+      end
       row :headline
       row :ordering
       row :created_at
@@ -38,5 +41,4 @@ ActiveAdmin.register New do
       end
     end
   end
-  permit_params :title, :content, :author, :ordering, :headline, :publish_at, :image
 end

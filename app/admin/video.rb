@@ -1,6 +1,6 @@
 ActiveAdmin.register Video do
-  config.filters = false
   permit_params :title, :url, :home_page
+  config.filters = false
 
   index do
     id_column

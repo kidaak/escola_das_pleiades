@@ -1,0 +1,7 @@
+- content_for :title do
+  = "#{@course.name}"
+h1= @course.name
+p= @course.description.html_safe
+= image_tag @course.image.url(:medium)
+br
+

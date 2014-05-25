@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/escola', to: 'pages#about', as: 'about'
   get '/contato', to: 'pages#contact', as: 'contact'
+  get '/cursos', to: 'courses#index', as: 'courses'
+  get '/cursos/:id', to: 'courses#show', as: 'course'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

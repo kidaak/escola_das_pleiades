@@ -1,0 +1,9 @@
+- content_for :title do
+  = "Cursos"
+- unless @courses.blank?
+  - @courses.each do |course|
+    =link_to course.name, course_path(course)
+    p=course.brief_description
+    = image_tag course.image.url(:medium)
+    br
+

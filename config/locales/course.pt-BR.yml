@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      course:
+        one: Curso
+        other: Cursos
+    attributes:
+      course:
+        name: Nome
+        description: Descrição
+        brief_description: Descrição Breve
+        starts_at: Inicio
+        ends_at: Fim

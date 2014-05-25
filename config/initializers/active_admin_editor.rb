@@ -1,6 +1,6 @@
 ActiveAdmin::Editor.configure do |config|
-  config.s3_bucket = ENV['S3_BUCKET_NAME']
-  config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
-  config.aws_access_secret = ENV['AWS_SECRET_ACCESS_KEY']
+  config.s3_bucket = Rails.application.secrets.s3_bucket_name
+  config.aws_access_key_id = Rails.application.secrets.access_key_id
+  config.aws_access_secret = Rails.application.secrets.secret_access_key
   # config.storage_dir = 'uploads'
 end
