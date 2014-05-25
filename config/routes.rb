@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'pages#home'
-  get '/escola', to: 'pages#about'
-  get '/contato', to: 'pages#contact'
+  get '/escola', to: 'pages#about', as: 'about'
+  get '/contato', to: 'pages#contact', as: 'contact'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
