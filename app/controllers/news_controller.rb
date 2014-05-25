@@ -1,6 +1,6 @@
 class NewsController < ApplicationController
   def index
-    @news = New.all
+    @news = New.published
   end
   def show
     @new = New.find(params[:id])

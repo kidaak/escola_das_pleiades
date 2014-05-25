@@ -1,0 +1,14 @@
+- content_for :title do
+  = "Eventos"
+- unless @events.blank?
+  - @events.each do |event|
+    h1= link_to event.name, event_path(event)
+    = image_tag event.image.url(:thumb)
+    br
+    p= event.address
+    span= 'Início: '
+    = l event.starts_at, format: :long
+    = ' - '
+    span= 'Fim: '
+    = l event.ends_at, format: :long
+

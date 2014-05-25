@@ -5,7 +5,7 @@ class New < ActiveRecord::Base
   validates_attachment :image, presence:true, :content_type => { content_type: "image/jpeg" }
 
   def self.published
-    where(["publish_at <= ?", Time.now])
+    where(["publish_at <= ?", Time.now]).order('publish_at DESC')
   end
 
   def self.home
