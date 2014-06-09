@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :students, :path => '', :path_names => {:login => 'login', :logout => 'logout'}
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'pages#home'

@@ -1,16 +1,16 @@
 development:
   adapter: postgresql
   database: escola_das_pleiades_development
-  username: postgres
-  password: postgres
+  username: andre
+  password: andre
   host: localhost
   poor: 5
 
 test:
   adapter: postgresql
   database: escola_das_pleiades_test
-  username: postgres
-  password: postgres
+  username: andre
+  password: andre
   host: localhost
   poor: 5
 
