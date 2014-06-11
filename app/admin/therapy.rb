@@ -1,12 +1,12 @@
 ActiveAdmin.register Therapy do
 
-  permit_params :name, :description, :brief_description, :image
+  permit_params :name, :description, :email, :image
   config.filters = false
 
   index do
     id_column
     column :name
-    column :brief_description
+    column :email
     actions
   end
 
@@ -14,7 +14,7 @@ ActiveAdmin.register Therapy do
     f.inputs do
       f.input :name
       f.input :description, as: :html_editor
-      f.input :brief_description
+      f.input :email
       f.input :image
     end
     f.actions
@@ -24,7 +24,7 @@ ActiveAdmin.register Therapy do
     attributes_table do
       row :id
       row :name
-      row :brief_description
+      row :email
       row :description do |therapy|
         therapy.description.html_safe
       end

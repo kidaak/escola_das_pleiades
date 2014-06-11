@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      student:
+        one: Aluno
+        other: Alunos
+    attributes:
+      student:
+        email: Usuário
+        password: Senha

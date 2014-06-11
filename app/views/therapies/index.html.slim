@@ -4,5 +4,5 @@
   - @therapies.each do |therapy|
     h1= link_to therapy.name, therapy_path(therapy)
     = image_tag therapy.image.url(:thumb)
-    p= therapy.brief_description
+    p= therapy.email
 
