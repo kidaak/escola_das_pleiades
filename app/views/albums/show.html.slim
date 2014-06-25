@@ -1,0 +1,4 @@
+- content_for :title do
+  = @album.title
+- @album.pictures.each do |picture|
+  = image_tag picture.image.url(:thumb)

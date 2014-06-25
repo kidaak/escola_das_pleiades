@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      picture:
+        one: Foto
+        other: Fotos
+    attributes:
+      picture:
+        caption: Legenda
+        credit: Crédito
+        image: Foto

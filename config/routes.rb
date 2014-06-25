@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/agenda/:id', to: 'events#show', as: 'event'
   get '/terapias', to: 'therapies#index', as: 'therapies'
   get '/terapias/:id', to: 'therapies#show', as: 'therapy'
+  get '/galeria', to: 'albums#index', as: 'albums'
+  get '/galeria/:id', to: 'albums#show', as: 'album'
   get '/area-do-aluno', to: 'students#show', as: 'student'
   get '/area-do-aluno/download/:id', to: 'students#download', as: 'download'
   # Example of regular route:

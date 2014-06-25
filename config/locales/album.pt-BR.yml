@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      album:
+        one: Album
+        other: Albums
+    attributes:
+      album:
+        title: Título
+        description: Descrição
+        cover: Capa
