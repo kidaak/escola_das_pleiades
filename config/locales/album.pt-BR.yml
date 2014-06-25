@@ -3,7 +3,7 @@ pt-BR:
     models:
       album:
         one: Album
-        other: Albums
+        other: Albuns
     attributes:
       album:
         title: Título

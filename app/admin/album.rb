@@ -23,7 +23,7 @@ ActiveAdmin.register Album do
     f.inputs "Admin Details" do
       f.input :title
       f.input :description
-      f.input :cover
+      f.input :cover, as: :select, collection: album.pictures.ids
     end
     f.actions
   end
