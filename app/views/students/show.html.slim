@@ -1,1 +1,8 @@
-p teste
+- content_for :title do
+  = "Área do Aluno"
+ul
+  - @uploads.each do |upload|
+    li = upload.title
+    li = upload.url
+    li = link_to 'Download', download_path(upload)
+= link_to 'Sair', destroy_student_session_path, method: :delete

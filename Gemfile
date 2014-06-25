@@ -35,7 +35,7 @@ gem 'active_admin_editor'
 # For authentication
 gem 'devise'
 # Upload attachment to amazon S3
-gem 'paperclip'
+gem 'paperclip', '~> 3.5.3'
 gem 'aws-sdk'
 
 group :development do

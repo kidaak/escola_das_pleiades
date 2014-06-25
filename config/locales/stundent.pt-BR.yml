@@ -8,3 +8,4 @@ pt-BR:
       student:
         email: Usuário
         password: Senha
+        sign_in_count: Contador de login

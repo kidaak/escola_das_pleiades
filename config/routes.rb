@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/terapias', to: 'therapies#index', as: 'therapies'
   get '/terapias/:id', to: 'therapies#show', as: 'therapy'
   get '/area-do-aluno', to: 'students#show', as: 'student'
-
+  get '/area-do-aluno/download/:id', to: 'students#download', as: 'download'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      upload:
+        one: Upload
+        other: Uploads
+    attributes:
+      upload:
+        title: Título
+        description: Descrição
+        url: URL
