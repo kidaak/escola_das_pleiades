@@ -1,21 +1,27 @@
-#header_wrapper
-  width: 100%
-  height: 100px
-  background: $header_color
-  top: 0
-  +clearfix
-  #header
-    padding: 0 250px
-    #logo
-      img
-        width: 100px
-        float: left
-    #links
-      padding: 42px
+#gradient-effect
+  background-color: $header_color
+  height: 115px
+  float: right
+  width: 14.4%
+#navbar
+  margin-top: 15px
+  border-bottom: 1px solid $border_color
+  dl
+    margin-bottom: -5px
+    dd
       a
-        font-size: $standard_size
-        color: $header_link_color
-        text-decoration: none
-        margin: 0 15px
+        padding-right: rem-calc(20.6)
+        padding-left: rem-calc(20.6)
       a:hover
-        color: $header_link_hover_color
+        color: scale-color($nav-bar_hover_color, $lightness: 12%)
+    .active
+      a
+        font-weight: bold
+        color: $nav-bar_active_color
+        background-color: transparent
+        padding-bottom: 7px
+        border-bottom: 3px solid $nav-bar_active_color
+      a:hover
+        color: scale-color($nav-bar_active_color, $lightness: 15%)
+
+

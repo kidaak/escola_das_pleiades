@@ -1,12 +1,20 @@
-#header_wrapper
-  #header
-    #logo = link_to image_tag("second_logo.png"), root_path
-    #links
-      =link_to 'Escola', about_path
-      =link_to 'Cursos', courses_path
-      =link_to 'Terapias', therapies_path
-      =link_to 'Agenda', events_path
-      =link_to 'Galeria', albums_path
-      =link_to 'Noticias', news_path
-      =link_to 'Contato', contact_path
-      =link_to 'Área do Aluno', student_path
+#gradient-effect
+#header.contain-to-grid
+  .top-bar
+    ul.title-area
+      li.name
+        #logo = link_to image_tag("logo.png"), root_path
+      li.toggle-topbar.menu-icon
+        = link_to '#' do
+          span Menu
+#navbar.row
+  .large-12
+    dl.sub-nav
+      = active_link_to 'ESCOLA', about_path
+      = active_link_to 'CURSOS', courses_path
+      = active_link_to 'TERAPIAS', therapies_path
+      = active_link_to 'AGENDA', events_path
+      = active_link_to 'GALERIA', albums_path
+      = active_link_to 'NOTICIAS', news_path
+      = active_link_to 'CONTATO', contact_path
+      = active_link_to 'ÁREA DO ALUNO', student_path

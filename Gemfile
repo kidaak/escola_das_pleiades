@@ -37,6 +37,8 @@ gem 'devise'
 # Upload attachment to amazon S3
 gem 'paperclip', '~> 3.5.3'
 gem 'aws-sdk'
+# Foundation, the most advanced front-end framework
+gem 'foundation-rails'
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
