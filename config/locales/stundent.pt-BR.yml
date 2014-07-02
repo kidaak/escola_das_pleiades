@@ -2,8 +2,8 @@ pt-BR:
   activerecord:
     models:
       student:
-        one: Aluno
-        other: Alunos
+        one: Turma
+        other: Turmas
     attributes:
       student:
         email: Usuário

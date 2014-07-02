@@ -2,6 +2,8 @@ ActiveAdmin.register Upload do
   belongs_to :student
   permit_params :title, :description, :url, :file
   config.filters = false
+  menu false
+  navigation_menu :default
 
   index do
     id_column
@@ -15,7 +17,7 @@ ActiveAdmin.register Upload do
       f.input :title
       f.input :description, as: :string
       f.input :url
-      f.input :file
+      f.input :file, label: 'Arquivo (Máx: 10mb):'
 
     end
     f.actions
