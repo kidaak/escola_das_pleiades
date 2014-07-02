@@ -1,19 +1,23 @@
 - content_for :title do
   = "Home"
-h1 Notícias
-- @news.each do |new|
-  h2=link_to new.title, new_path(new)
-  image= image_tag new.image.url(:thumb)
-  br
-  headline= new.headline
-br
-br
-br
-h1 Eventos
+.row
+  #news.large-8.column
+    #super_new
+      #image.large-8.column = link_to (image_tag(@super_new.image.url(:medium))), new_path(@super_new)
+      #text.large-4.column.left
+        h5#title = link_to @super_new.title, new_path(@super_new)
+        #headline = @super_new.headline
+    #normal_news
+      - @news.each do |new|
+        #normal_new.large-6.columns
+          #image = link_to (image_tag(new.image.url(:medium))), new_path(new)
+          h5 =link_to new.title, new_path(new)
+          #headline = new.headline
+
+
 - @events.each do |event|
   h2=link_to event.name, event_path(event)
   image= image_tag event.image.url(:thumb)
-  br
   span= l event.starts_at, format: :long
 br
 br

@@ -9,6 +9,9 @@ class New < ActiveRecord::Base
   end
 
   def self.home
-    published.where("ordering > 0").order(:ordering).limit(4)
+    published.where("ordering > 1").order(:ordering).limit(2)
+  end
+  def self.super_new
+    published.where("ordering = 1").first
   end
 end
