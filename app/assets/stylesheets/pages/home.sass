@@ -1,6 +1,5 @@
 #news
   #super_new
-    margin-top: 20px
     overflow: hidden
     height: 250px
     #image
@@ -10,6 +9,7 @@
     #text
       color: $light_text_color
       padding: 30px 20px
+      margin-left: -15px
       background-color: $header_color
       height: 100%
       h5
@@ -38,3 +38,30 @@
           text-decoration: underline
       #headline
         font-size: $small_size
+#events
+  background-color: $events_background_color
+  padding: 0
+  color: #aaa
+  h5
+    color: $events_header_text_color
+    margin-bottom: 10px
+    font-size: $small_size
+    background-color: $events_header_color
+    padding: 2px 20px
+  #event
+    padding: 2px 20px
+    height: 72px
+    overflow: hidden
+    h4
+      margin: 0
+      font-size: $standard_size
+      a
+        color: $black
+      a:hover
+        text-decoration: underline
+    #more
+      display: inline
+      a
+        color: $events_header_text_color
+.flex-video
+  margin-bottom: 0

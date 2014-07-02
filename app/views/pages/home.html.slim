@@ -13,14 +13,14 @@
           #image = link_to (image_tag(new.image.url(:medium))), new_path(new)
           h5 =link_to new.title, new_path(new)
           #headline = new.headline
-
-
-- @events.each do |event|
-  h2=link_to event.name, event_path(event)
-  image= image_tag event.image.url(:thumb)
-  span= l event.starts_at, format: :long
-br
-br
-br
--if @video
-  iframe width="560" height="315" src="//www.youtube.com/embed/#{@video.code}" frameborder="0" allowfullscreen
+  #events.large-4.column
+    h5 Agenda
+    - @events.each do |event|
+      #event
+        h4 = link_to "#{l event.starts_at, format: :simple} - #{event.name}", event_path(event)
+        span
+          = "#{event.description[0..55]}..."
+          #more = link_to 'saiba mais', event_path(event) if event.description.length > 55
+    -if @video
+      .flex-video
+        iframe frameborder="0" src="//www.youtube.com/embed/#{@video.code}?rel=0&amp;showinfo=0&amp;controls=0" allowfullscreen
