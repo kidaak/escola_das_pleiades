@@ -2,8 +2,8 @@ pt-BR:
   activerecord:
     models:
       therapy:
-        one: Terapia
-        other: Terapias
+        one: Terapeuta
+        other: Terapeutas
     attributes:
       therapy:
         name: Nome

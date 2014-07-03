@@ -1,19 +1,19 @@
 - content_for :title do
   = "Home"
 .row
-  #news.large-8.column
+  #news.small-8.column
     #super_new
-      #image.large-8.column = link_to (image_tag(@super_new.image.url(:medium))), new_path(@super_new)
-      #text.large-4.column.left
+      #image.small-8.column = link_to (image_tag(@super_new.image.url(:medium))), new_path(@super_new)
+      #text.small-4.column.left
         h5#title = link_to @super_new.title, new_path(@super_new)
         #headline = @super_new.headline
     #normal_news
       - @news.each do |new|
-        #normal_new.large-6.columns
+        #normal_new.small-6.columns
           #image = link_to (image_tag(new.image.url(:medium))), new_path(new)
           h5 =link_to new.title, new_path(new)
           #headline = new.headline
-  #events.large-4.column
+  #events.small-4.column
     h5 Agenda
     - @events.each do |event|
       #event

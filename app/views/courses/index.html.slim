@@ -1,8 +1,10 @@
 - content_for :title do
   = "Cursos"
 - unless @courses.blank?
-  - @courses.each do |course|
-    h1= link_to course.name, course_path(course)
-    = image_tag course.image.url(:thumb)
-    p= course.brief_description
+  .row#courses
+    - @courses.each do |course|
+      .small-6.columns.left#course
+        #image = link_to (image_tag(course.image.url(:medium))), new_path(course)
+        h4 = link_to course.name, course_path(course)
+        p = course.brief_description.html_safe
 
