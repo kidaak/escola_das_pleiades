@@ -274,6 +274,7 @@ DEPENDENCIES
   inherited_resources (~> 1.4.1)
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   machinist (~> 2.0)
   nprogress-rails
   paperclip (~> 3.5.3)
