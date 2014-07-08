@@ -1,4 +1,7 @@
 - content_for :title do
   = @album.title
-- @album.pictures.each do |picture|
-  = image_tag picture.image.url(:thumb)
+.row
+  #album
+    - @album.pictures.each do |picture|
+      #picture.small-3.column
+        = link_to image_tag(picture.image.url(:medium)), picture.image.url, target: :blank
