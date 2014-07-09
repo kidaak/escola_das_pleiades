@@ -6,7 +6,6 @@ ActiveAdmin.register Album do
     selectable_column
     id_column
     column :title
-    column :description
     column :cover do |album|
       if album.cover
         album.cover
