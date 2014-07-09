@@ -8,4 +8,4 @@
         #text.small-7.column
           h4 = link_to event.name, event_path(event)
           p = "Onde? #{event.address}"
-          p = "Quando? #{l event.starts_at, format: :short}"
+          p = event.notice.html_safe if event.notice

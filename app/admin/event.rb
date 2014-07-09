@@ -1,5 +1,5 @@
 ActiveAdmin.register Event do
-  permit_params :name, :description, :starts_at, :ordering, :ends_at, :image, :address
+  permit_params :name, :description, :starts_at, :ordering, :ends_at, :image, :address, :notice
   config.filters = false
 
   index do
@@ -19,6 +19,7 @@ ActiveAdmin.register Event do
       f.input :ordering
       f.input :address
       f.input :image
+      f.input :notice
     end
     f.actions
   end
@@ -34,6 +35,7 @@ ActiveAdmin.register Event do
       row :ends_at
       row :ordering
       row :address
+      row :notice
       row :image do
         image_tag event.image.url(:thumb)
       end
