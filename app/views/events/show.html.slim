@@ -1,16 +1,15 @@
 - content_for :title do
   = "#{@event.name}"
-h1= @event.name
-p= @event.description.html_safe
-h4 Quando?
-span= 'Início: '
-= l @event.starts_at, format: :long
-= ' - '
-span= 'Fim: '
-= l @event.ends_at, format: :long
-h4 Onde?
-= @event.address
-br
-br
-= image_tag @event.image.url(:medium)
-br
+.row
+  h2#event_name.small-12.text-center = @event.name
+  .small-5.column = image_tag @event.image.url(:medium)
+  p= @event.description.html_safe
+  h4 Quando?
+  span= 'Início: '
+  = l @event.starts_at, format: :long
+  = ' - '
+  span= 'Fim: '
+  = l @event.ends_at, format: :long
+  h4 Onde?
+  = @event.address
+
