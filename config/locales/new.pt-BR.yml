@@ -15,3 +15,5 @@ pt-BR:
         created_at: Criado em
         updated_at: Atualizado em
         image: imagem
+        image_caption: Legenda da imagem
+        image_credit: Crédito da imagem

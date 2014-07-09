@@ -1,5 +1,7 @@
 ActiveAdmin.register New do
-  permit_params :title, :content, :author, :ordering, :headline, :publish_at, :image
+  permit_params :title, :content, :author, :ordering, :headline, :publish_at,
+  :image, :image_credit, :image_caption
+
 
   index do
     id_column
@@ -18,6 +20,8 @@ ActiveAdmin.register New do
       f.input :ordering
       f.input :headline
       f.input :image
+      f.input :image_credit
+      f.input :image_caption
       f.input :publish_at
     end
     f.actions
@@ -39,6 +43,8 @@ ActiveAdmin.register New do
       row :image do
         image_tag new.image.url(:thumb)
       end
+      row :image_credit
+      row :image_caption
     end
   end
 end

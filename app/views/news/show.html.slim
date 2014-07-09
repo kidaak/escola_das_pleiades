@@ -1,7 +1,10 @@
 - content_for :title do
   = "#{@new.title}"
 .row#new
-  #image.small-5.column = image_tag @new.image.url(:medium)
+  #left.small-5.column
+    #credit = @new.image_credit
+    #image = image_tag @new.image.url(:medium)
+    #caption = @new.image_caption
   h3#title = @new.title
   #author_date = "Por #{@new.author}" if @new.author.present?
   h5#headline = @new.headline.upcase
