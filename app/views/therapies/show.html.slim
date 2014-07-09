@@ -1,6 +1,0 @@
-- content_for :title do
-  = "#{@therapy.name}"
-.row
-  h2#course_name.small-12.text-center = @therapy.name
-  .small-4.column = image_tag @therapy.image.url(:medium)
-  p= @therapy.description.html_safe

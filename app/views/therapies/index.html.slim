@@ -5,7 +5,7 @@
     .row#therapy
       .small-12#course
         .small-4.column#image = link_to (image_tag(therapy.image.url(:medium))), new_path(therapy)
-        h4 = link_to therapy.name, therapy_path(therapy)
+        h4 = therapy.name
         p = therapy.description.html_safe
         br
         br
