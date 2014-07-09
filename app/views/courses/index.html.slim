@@ -4,7 +4,7 @@
   .row#courses
     - @courses.each do |course|
       .small-6.columns.left#course
-        #image = link_to (image_tag(course.image.url(:medium))), new_path(course)
+        #image = link_to (image_tag(course.image.url(:medium))), course_path(course)
         h4 = link_to course.name, course_path(course)
         p = course.brief_description.html_safe
 

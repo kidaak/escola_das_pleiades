@@ -5,12 +5,12 @@
     thead
       tr
         th Título
-        th URL
+        th Link
         th Download
     tbody
       - @uploads.each do |upload|
         tr
           td = upload.title
-          td = link_to upload.url if upload.url
+          td = link_to upload.url, upload.url, target: :blank if upload.url
           td = link_to 'Download', download_path(upload) if upload.file.present?
   .text-center = link_to 'Sair', destroy_student_session_path, method: :delete
