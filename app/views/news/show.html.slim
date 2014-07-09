@@ -3,6 +3,6 @@
 .row#new
   #image.small-5.column = image_tag @new.image.url(:medium)
   h3#title = @new.title
-  #author_date = "Por #{@new.author} em #{l @new.publish_at, format: :short}"
+  #author_date = "Por #{@new.author}" if @new.author.present?
   h5#headline = @new.headline.upcase
   p#content= @new.content.html_safe
