@@ -19,7 +19,7 @@
       #event
         h4 = link_to "#{l event.starts_at, format: :simple} - #{event.name}", event_path(event)
         span
-          = "#{event.description[0..55]}..."
+          = "#{event.description[0..55]}...".html_safe
           #more = link_to 'saiba mais', event_path(event) if event.description.length > 55
     -if @video
       .flex-video
