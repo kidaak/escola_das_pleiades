@@ -1,5 +1,5 @@
 class TherapiesController < ApplicationController
   def index
-    @therapies = Therapy.all
+    @therapies = Therapy.all.order(:ordering)
   end
 end
