@@ -13,7 +13,7 @@ ActiveAdmin.register Event do
   form do |f|
     f.inputs do
       f.input :name
-      f.input :description
+      f.input :description, as: :html_editor
       f.input :starts_at
       f.input :ends_at
       f.input :ordering
