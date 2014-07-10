@@ -2,9 +2,9 @@
   = "#{@new.title}"
 .row#new_show
   #left.small-5.column
-    #credit = @new.image_credit
+    #credit = @new.image_credit if @new.image_credit
     #image.text-center = image_tag @new.image.url
-    #caption = @new.image_caption
+    #caption = @new.image_caption if @new.image_caption
   h3#title = @new.title
   #author_date = "Por #{@new.author}" if @new.author.present?
   h5#headline = @new.headline.mb_chars.upcase
