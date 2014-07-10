@@ -17,7 +17,7 @@ ActiveAdmin.register New do
       f.input :title
       f.input :content, as: :html_editor
       f.input :author
-      f.input :ordering
+      f.input :ordering, as: :select, collection: [0,1,2,3]
       f.input :headline
       f.input :image
       f.input :image_credit
