@@ -1,5 +1,5 @@
 - content_for :title do
-  = "Galeria"
+  = "Galeria".html_safe
 .row#albums
   - @albums.each do |album|
     #album.small-4.column.left

@@ -1,5 +1,5 @@
 - content_for :title do
-  = "Noticias"
+  = "Noticias".html_safe
 - unless @news.blank?
   .row#news
     - @news.each do |new|

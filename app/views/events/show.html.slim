@@ -1,9 +1,9 @@
 - content_for :title do
-  = "#{@event.name}"
-.row
+  = "#{@event.name}".html_safe
+.row#event_show
   h2#event_name.small-12.text-center = @event.name
   .small-5.column = image_tag @event.image.url(:medium)
-  p= @event.description.html_safe
+  #content = @event.description.html_safe
   h4 Quando?
   span= 'Início: '
   = l @event.starts_at, format: :long

@@ -1,5 +1,5 @@
 - content_for :title do
-  = "Terapias"
+  = "Terapias".html_safe
 - unless @therapies.blank?
   - @therapies.each do |therapy|
     .row#therapy

@@ -1,5 +1,5 @@
 - content_for :title do
-  = "#{@new.title}"
+  = "#{@new.title}".html_safe
 .row#new_show
   #left.small-5.column
     #credit = @new.image_credit if @new.image_credit
