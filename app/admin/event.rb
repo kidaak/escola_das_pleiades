@@ -14,6 +14,7 @@ ActiveAdmin.register Event do
     f.inputs do
       f.input :name
       f.input :description, as: :html_editor
+      f.input :headline
       f.input :starts_at
       f.input :ends_at
       f.input :ordering
@@ -31,6 +32,7 @@ ActiveAdmin.register Event do
       row :description do |event|
         event.description.html_safe
       end
+      row :headline
       row :starts_at
       row :ends_at
       row :ordering

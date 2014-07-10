@@ -1,0 +1,10 @@
+#fb-root
+javascript:
+  // Load the SDK Asynchronously
+  (function(d){
+    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement('script'); js.id = id; js.async = true;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=595088450606194&version=v2.0";
+    ref.parentNode.insertBefore(js, ref);
+  }(document));

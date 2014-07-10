@@ -1,11 +1,17 @@
 #footer
   .row
     .small-12
-      .small-4.columns#facebook
+      .small-4.columns#left.footer_column
         h5 CURTA NOSSO FACEBOOK
-      .small-4.columns#newsletter
+        br
+        #facebook = render 'layouts/facebook_like'
+      .small-4.columns#middle.footer_column
         h5 FALE CONOSCO
+        br
         p contato@escoladaspleiades.com
-      .small-4.columns#newsletter
+      .small-4.columns#right.footer_column
         h5 ENDEREÇO
-        p Rua Nunes Machado, 201/201 - Azenha, Porto Alegre/RS
+        br
+        span Rua Nunes Machado, 201/201
+        br
+        span Azenha, Porto Alegre/RS
