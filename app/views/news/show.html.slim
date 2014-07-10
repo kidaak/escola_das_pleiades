@@ -1,11 +1,11 @@
 - content_for :title do
   = "#{@new.title}"
-.row#new
+.row#new_show
   #left.small-5.column
     #credit = @new.image_credit
-    #image = image_tag @new.image.url(:medium)
+    #image.text-center = image_tag @new.image.url
     #caption = @new.image_caption
   h3#title = @new.title
   #author_date = "Por #{@new.author}" if @new.author.present?
-  h5#headline = @new.headline.upcase
-  p#content= @new.content.html_safe
+  h5#headline = @new.headline.mb_chars.upcase
+  #content= @new.content.html_safe

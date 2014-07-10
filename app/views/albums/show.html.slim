@@ -1,10 +1,10 @@
 - content_for :title do
   = @album.title
 .row
-  #album
-    h3.text-center = @album.title
-    p.text-center = @album.description
+  #album_show
+    h3.text-center = @album.title if @album.title
+    p.text-center = @album.description if @album.description
     - @album.pictures.each do |picture|
-      #picture.small-3.column
-        = link_to image_tag(picture.image.url(:medium)), picture.image.url, target: :blank
+      #picture.small-3.column.left
+        #image = link_to image_tag(picture.image.url(:medium)), picture.image.url, target: :blank
         p = picture.caption if picture.caption

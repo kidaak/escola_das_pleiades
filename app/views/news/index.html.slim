@@ -1,7 +1,7 @@
 - content_for :title do
   = "Noticias"
 - unless @news.blank?
-  .row
+  .row#news
     - @news.each do |new|
       #new.small-4.column.left
         #image = link_to (image_tag(new.image.url(:medium))), new_path(new)

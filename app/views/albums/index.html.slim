@@ -1,10 +1,10 @@
 - content_for :title do
   = "Galeria"
-.row
+.row#albums
   - @albums.each do |album|
     #album.small-4.column.left
       - if album.album_cover
-        = link_to image_tag(album.album_cover.image.url(:medium)), album_path(album)
+        #image = link_to image_tag(album.album_cover.image.url(:medium)), album_path(album)
       - else
-        = link_to image_tag('http://decoracao.novidadediaria.com.br/wp-content/gallery/quadros-de-paisagem/quadros-de-paisagem-5.jpg'), album_path(album)
+        #image = link_to image_tag('http://decoracao.novidadediaria.com.br/wp-content/gallery/quadros-de-paisagem/quadros-de-paisagem-5.jpg'), album_path(album)
       h5.text-center = link_to album.title, album_path(album)

@@ -4,9 +4,8 @@
   - @therapies.each do |therapy|
     .row#therapy
       .small-12#course
-        .small-4.column#image = link_to (image_tag(therapy.image.url(:medium))), new_path(therapy)
-        h4 = therapy.name
-        p = therapy.description.html_safe
-        br
-        br
+        .small-4.column#image = image_tag(therapy.image.url(:medium))
+        .small-8.column#text
+          h4 = therapy.name
+          p = therapy.description.html_safe
 
