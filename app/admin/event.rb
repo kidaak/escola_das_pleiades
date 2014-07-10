@@ -1,5 +1,5 @@
 ActiveAdmin.register Event do
-  permit_params :name, :description, :starts_at, :ordering, :ends_at, :image, :address, :notice
+  permit_params :name, :description, :starts_at, :ordering, :ends_at, :image, :address, :notice, :headline
   config.filters = false
 
   index do
