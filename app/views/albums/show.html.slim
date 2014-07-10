@@ -5,6 +5,6 @@
     h3.text-center = @album.title if @album.title
     p.text-center = @album.description if @album.description
     - @album.pictures.each do |picture|
-      #picture.small-3.column.left
+      #picture.small-4.column.left
         #image = link_to image_tag(picture.image.url(:medium)), picture.image.url, target: :blank
         p = picture.caption if picture.caption
