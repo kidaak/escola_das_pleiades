@@ -2,7 +2,7 @@ doctype 5
 html
 head
   = favicon_link_tag
-  title= "#{"#{yield :title} · " if content_for?(:title)} Escola das Pleiades"
+  title= "#{"#{yield :title} · " if content_for?(:title)} Escola das Plêiades"
   = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
   = javascript_include_tag "application", "data-turbolinks-track" => true
   link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'
@@ -10,13 +10,13 @@ head
   = csrf_meta_tags
   meta name="viewport" content="width=device-width, initial-scale=1.0"
   meta property="og:locale" content="en_US"
-  meta name="description"         content=yield(:title)
-  meta name="keywords"            content="#{yield :title} Escola das Pleiades"
-  meta property="og:title"        content=yield(:title)
+  meta name="description"         content='Educação continuada para a sua saúde integral.'
+  meta name="keywords"            content="#{yield :title} Escola das Plêiades"
+  meta property="og:title"        content='Escola das Plêiades'
   meta property="og:type"         content="website"
   meta property="og:url"          content=request.url
   meta property="og:image"        content='http://escoladaspleiades.com.br/assets/Capa-2543a0251b5fed4df42927e03ae37337.png'
-  meta property="og:description"  content=yield(:title)
+  meta property="og:description"  content='Educação continuada para a sua saúde integral.'
 body
   = render partial: 'layouts/facebook_sdk'
   = render partial: 'layouts/header'
