@@ -9,6 +9,14 @@ head
   = javascript_include_tag "vendor/modernizr"
   = csrf_meta_tags
   meta name="viewport" content="width=device-width, initial-scale=1.0"
+  meta property="og:locale" content="en_US"
+  meta name="description"         content=yield(:title)
+  meta name="keywords"            content="#{yield :title} Escola das Pleiades"
+  meta property="og:title"        content=yield(:title)
+  meta property="og:type"         content="website"
+  meta property="og:url"          content=request.url
+  meta property="og:image"        content='http://escoladaspleiades.com.br/assets/Capa-2543a0251b5fed4df42927e03ae37337.png'
+  meta property="og:description"  content=yield(:title)
 body
   = render partial: 'layouts/facebook_sdk'
   = render partial: 'layouts/header'
