@@ -6,6 +6,7 @@
     #image.text-center = image_tag @new.image.url
     #caption = @new.image_caption if @new.image_caption
   h3#title = @new.title
+  #facebook = render 'layouts/facebook_like'
   #author_date = "Por #{@new.author}" if @new.author.present?
   h5#headline = @new.headline.mb_chars.upcase
   #content= @new.content.html_safe
