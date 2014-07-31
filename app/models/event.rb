@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   end
 
   def self.home
-    by_relevance.limit(3)
+    by_relevance.where("ordering > 1").order(:ordering).limit(3)
   end
   def past?
     ends_at < Time.now
