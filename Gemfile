@@ -41,6 +41,13 @@ gem 'aws-sdk'
 gem 'foundation-rails'
 # Pagination
 gem 'kaminari'
+# For beautiful and simple forms
+gem 'simple_form'
+# Javascript initializer
+gem 'initjs'
+# Masks for inputs
+gem 'maskedinput-rails'
+
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

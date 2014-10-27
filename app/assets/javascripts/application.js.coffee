@@ -14,7 +14,10 @@
 #= require jquery_ujs
 #= require foundation
 #= require turbolinks
+#= require escola_das_pleiades/escola_das_pleiades.js
+#= require init.js
 #= require_tree .
 #= require nprogress
 #= require nprogress-turbolinks
+#= require maskedinput
 $(document).foundation();

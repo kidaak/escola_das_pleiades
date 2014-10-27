@@ -17,8 +17,11 @@ head
   meta property="og:url"          content=request.url
   meta property="og:image"        content='http://escoladaspleiades.com.br/assets/Avatar-a4413bde869702382be7039a1e6057ae.png'
   meta property="og:description"  content='Educação continuada para a sua saúde integral.'
+
+  = initjs_tag 'EscolaDasPleiades'
 body
   = render partial: 'layouts/facebook_sdk'
+  = render partial: 'layouts/flash'
   = render partial: 'layouts/header'
   #content_wrapper
     #content

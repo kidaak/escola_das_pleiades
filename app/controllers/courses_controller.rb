@@ -5,4 +5,9 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find(params[:id])
   end
+
+  def subscribe
+    @course = Course.find(params[:id])
+    @contact = Contact.new
+  end
 end

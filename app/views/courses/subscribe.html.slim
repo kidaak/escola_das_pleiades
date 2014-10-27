@@ -1,0 +1,31 @@
+.row
+  = simple_form_for @contact, url: create_contact_path do |f|
+    .small-6.small-centered.column
+      .input-group
+        = label :course, 'Curso'
+        = f.association :course, required: false, label: false, include_blank: false, selected: @course.id
+      .input-group
+        = f.label :full_name, 'Nome Completo'
+        = f.input :full_name, autofocus: true, placeholder: "Ex: João da Silva", required: false, label: false
+      .input-group
+        = f.label :cpf_cnjj, 'CPF / CNPJ'
+        = f.input :cpf_cnpj, placeholder: "Ex: 999.999.999-99", required: false, label: false, input_html: {class: 'input-cpf'}
+      .input-group
+        = f.label :zip_code, 'CEP'
+        = f.input :zip_code, placeholder: "Ex: 99.999-999", required: false, label: false, input_html: {class: 'input-cep'}
+      .input-group
+        = f.label :address, 'Endereço'
+        = f.input :address, placeholder: "Ex: Rua de Exemplo, 123, apt. 101", required: false, label: false
+      .input-group
+        = f.label :neighborhood, 'Bairro'
+        = f.input :neighborhood, placeholder: "Ex: Centro", required: false, label: false
+      .input-group
+        = f.label :city, 'Cidade'
+        = f.input :city, placeholder: "Ex: Porto Alegre", required: false, label: false
+      .input-group
+        = f.label :state, 'Estado'
+        = f.input :state, placeholder: "Ex: Rio Grande do Sul", required: false, label: false
+      .input-group
+        = f.label :email, 'Email'
+        = f.input :email, placeholder: "ex: joao@email.com", required: false, label: false
+      .text-center= f.button :submit, 'Enviar', class: 'button expand'
