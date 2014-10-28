@@ -5,10 +5,11 @@ ActiveAdmin.register Contact do
 
   index do
     id_column
-    column :name
-    column :email
+    column :full_name
+    column :email do |contact|
+      mail_to contact.email
+    end
     column :created_at
-    column :telephone
     actions
   end
 end
