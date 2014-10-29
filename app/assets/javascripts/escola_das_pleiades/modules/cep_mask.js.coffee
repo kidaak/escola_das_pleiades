@@ -1,3 +1,3 @@
 EscolaDasPleiades.CepMask =
   init: ->
-    $(".input-cep").mask("99.999-999")
+    $(".input-cep").inputmask("99.999-999")

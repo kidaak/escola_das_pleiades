@@ -46,7 +46,7 @@ gem 'simple_form'
 # Javascript initializer
 gem 'initjs'
 # Masks for inputs
-gem 'maskedinput-rails'
+gem 'jquery-inputmask-rails'
 
 
 group :development do
