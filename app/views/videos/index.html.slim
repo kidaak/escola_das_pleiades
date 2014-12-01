@@ -1,0 +1,10 @@
+- content_for :title do
+  = "Videos".html_safe
+.row#videos
+  - @videos.each do |video|
+    .small-6.column.left
+      .flex-video
+        iframe frameborder="0" src="//www.youtube.com/embed/#{video.code}?rel=0&amp; fs=1"
+.row.text-center
+  = paginate @videos
+
