@@ -2,16 +2,20 @@
   .row
     .small-12
       .small-4.columns#left.footer_column
-        h5 CURTA NOSSO FACEBOOK
-        br
-        #facebook = render 'layouts/facebook_general_like'
-      .small-4.columns#middle.footer_column
-        h5 FALE CONOSCO
-        br
-        p escoladaspleiades@gmail.com
-      .small-4.columns#right.footer_column
         h5 ENDEREÇO
         br
         span Rua Nunes Machado, 201/201
         br
         span Azenha, Porto Alegre/RS
+      .small-4.columns#middle.footer_column
+        h5 FALE CONOSCO
+        br
+        p escoladaspleiades@gmail.com
+        br
+        h5 CURTA NOSSO FACEBOOK
+        br
+        #facebook = render 'layouts/facebook_general_like'
+      .small-4.columns#right.footer_column
+        h5 NEWSLETTER
+        br
+        #newsletter-form = render 'layouts/newsletter'
