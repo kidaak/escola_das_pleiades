@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def about
+    @about = Page.find_by(page_name: 'Escola').content
   end
 
   def contact

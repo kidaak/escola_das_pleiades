@@ -6,6 +6,7 @@ ActiveAdmin.register Contact do
   index do
     id_column
     column :full_name
+    column :course
     column :email do |contact|
       mail_to contact.email
     end
