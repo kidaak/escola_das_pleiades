@@ -28,4 +28,7 @@
       .input-group
         = f.label :email, 'Email'
         = f.input :email, placeholder: "ex: joao@email.com", required: false, label: false
-      .text-center= f.button :submit, 'Enviar', class: 'button expand'
+      .input-group
+        = f.label :phone, 'Telefone para contato'
+        = f.input :phone, placeholder: "ex: (51) 3019-7990", required: false, label: false
+      .text-center = f.button :submit, 'Enviar', class: 'button expand'

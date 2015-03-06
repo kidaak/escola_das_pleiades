@@ -22,7 +22,7 @@ class CoursesController < ApplicationController
   end
 
   def contact_params
-    params.require(:contact).permit(:full_name, :email, :cpf_cnpj, :zip_code,
+    params.require(:contact).permit(:full_name, :email, :phone, :cpf_cnpj, :zip_code,
                                     :address, :neighborhood, :city, :state,
                                     :course_id)
   end

@@ -7,6 +7,7 @@ pt-BR:
     attributes:
       contact:
         full_name: Nome Completo
+        phone: Telefone para contato
         zip_code: CEP
         cpf_cnpj: CPF/CNPJ
         address: Endereço
