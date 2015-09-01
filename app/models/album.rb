@@ -3,7 +3,7 @@ class Album < ActiveRecord::Base
   has_many :pictures
 
   def album_cover
-    if self.cover
+    if self.cover && self.pictures.exists?(id: self.cover)
       self.pictures.find(self.cover)
     else
       self.pictures.first
