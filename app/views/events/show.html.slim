@@ -7,9 +7,10 @@
   h4 Quando?
   span= 'Início: '
   = l @event.starts_at, format: :long
-  = ' - '
-  span= 'Fim: '
-  = l @event.ends_at, format: :long
+  - if @event.ends_at.present?
+    = ' - '
+    span= 'Fim: '
+    = l @event.ends_at, format: :long
   h4 Onde?
   = @event.address
 
